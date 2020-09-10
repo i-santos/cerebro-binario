@@ -1,0 +1,54 @@
+// css
+.field {
+  display: flex;
+  flex-direction: column;
+}
+.field__label {
+  text-transform: uppercase;
+  font-size: 0.9rem; // root
+  font-weight: 700;
+}
+.field__text {
+  border-radius: 5px; // curva as pontas
+  border: 1px solid #000000;
+  flex: 1;
+  padding: 10px;
+  font-family: "Fira Code";
+}
+.field__text--container {
+  display: flex;
+}
+.field__text--append {
+  flex: 1;
+}
+
+// scss
+
+.field {
+  display: flex;
+  flex-direction: column; // colocar elementos em coluna
+  margin: 15px 0px 15px 0px;
+
+  &__label {
+    text-transform: uppercase;
+    font-size: 0.9rem; // root
+    font-weight: 700;
+  }
+
+  &__text {
+    border-radius: 5px; // curva as pontas
+    border: 1px solid #000000;
+    flex: 1;
+
+    padding: 10px;
+
+    font-family: "Fira Code";
+
+    &--container {
+      display: flex;
+    }
+    &--append {
+      flex: 1;
+    }
+  }
+}
