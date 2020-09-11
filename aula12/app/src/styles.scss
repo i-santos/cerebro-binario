@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+
+html {
+  font-size: 16px;
+  font-family: "Fira Code";
+}
+
+body {
+  margin: 0;
+}
+
+input,
+button {
+  font-family: "Fira Code";
+}
+
+input[type="submit"],
+button {
+  background-color: #813d69;
+  color: #ffffff;
+  border: 1px solid #222222;
+  border-radius: 15px;
+  padding: 5px;
+  min-width: 100px;
+}
