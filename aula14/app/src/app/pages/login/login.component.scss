@@ -1,0 +1,47 @@
+// scss
+
+// mixin
+@mixin textfield {
+  background-color: #ffffff;
+  border-radius: 5px; // curva as pontas
+  border: 1px solid #000000;
+}
+
+@mixin textfield--append {
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  &--append {
+    @include textfield();
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+.field {
+  display: flex;
+  flex-direction: column; // colocar elementos em coluna
+  margin: 15px 0px 15px 0px;
+
+  &__label {
+    text-transform: uppercase;
+    font-size: 0.9rem; // root
+    font-weight: 700;
+  }
+
+  &__text {
+    @include textfield();
+    @include textfield--append();
+    flex: 1;
+
+    padding: 10px;
+
+    font-family: "Fira Code";
+
+    &--container {
+      display: flex;
+      flex-direction: row; // padrão
+    }
+  }
+}
